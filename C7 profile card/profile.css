@@ -1,0 +1,106 @@
+
+        
+        .card {
+            width: 350px; 
+            margin: auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex; 
+            margin-top: 50px;
+            padding: 20px;
+            align-items: center; 
+        }
+
+        .info-container {
+            padding-left: 20px; 
+            flex-grow: 1; 
+        }
+        
+        
+        .profile-img {
+            width: 150px; 
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #e0e0e0; 
+            display: block; 
+        }
+
+        h2 {
+            font-size: 1.8rem; 
+            font-weight: bold;
+            margin-bottom: 5px; 
+        }
+
+        
+        p {
+            color: #555; 
+            font-size: 0.9em; 
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        
+        .actions {
+            display: flex; 
+        }
+        
+        .actions a {
+            background-color: #007bff; 
+            color: white;
+            text-decoration: none; 
+            padding: 8px 15px;
+            border-radius: 8px; 
+            margin-right: 10px;
+            transition: opacity 0.3s;
+        }
+
+        .actions a:hover {
+            opacity: 0.85; 
+        }
+
+        
+        @media (max-width: 640px) {
+        
+            .card {
+                flex-direction: column;
+                width: 70vw;
+                padding: 30px 15px; 
+                text-align: center; 
+            }
+        }    
+
+           
+            .profile-img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 15px; 
+            }
+
+            .info-container {
+                
+                padding-left: 0; 
+            }
+
+            
+            h2, p {
+                text-align: center;
+            }
+
+           
+            .actions {
+                flex-direction: column;
+                width: 100%; 
+            }
+            
+            .actions a {
+              
+                width: 90%;
+                display: block;
+                margin: 10px auto;
+                padding: 12px 0;
+                margin-right: auto;
+            }
+        
+    

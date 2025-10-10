@@ -1,0 +1,28 @@
+ h1 {
+            color: darkred;
+            background-color: floralwhite;
+            padding: 10px; 
+        }
+
+        h2{
+            color: darkred;
+            background-color: floralwhite;
+            padding: 10px; 
+        }
+        #ingredients li {
+            color: green;
+        }
+
+        
+        #instructions li {
+            color: mediumblue;
+        }
+
+        
+        footer {
+            font-style: italic;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+    

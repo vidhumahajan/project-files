@@ -1,0 +1,49 @@
+
+        body {
+	        margin: 0;
+	        overflow: hidden;
+        }
+        .wrapper {
+        	width: 100vw;
+	        height: 100vh;
+	        background-color: #000;
+	        position: relative;
+        }
+        .earth {
+	        width: 200px;
+	        height: 200px;
+	        border-radius: 50%;
+            background-color:blue;
+	        position: absolute;
+	        top: 50%;
+	        left: 50%;
+	        transform: translate(-50%, -50%);
+	        animation: earthanim 15s linear infinite;
+        }
+        .moon {
+	        width: 60px;
+	        height: 60px;
+            background-color:white;
+            border-radius:50%;
+	        position: absolute;
+	        top: 50%;
+	        left: 50%;
+	        animation: moonanimation 7s linear infinite;
+        }
+        @keyframes earthanim {
+	        0% {
+		        transform: translate(-50%, -50%) rotate(0deg);
+	            }
+	        100% {
+		        transform: translate(-50%, -50%) rotate(360deg);
+	            }
+        }
+        @keyframes moonanimation {
+	        0% {
+		        transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
+	            }
+	        100% {
+		        transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg);
+	            }
+        }
+    
